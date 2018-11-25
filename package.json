@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "now-prisma",
+  "version": "1.0.0",
+  "license": "MIT",
+  "workspaces": [
+    "client",
+    "server",
+    "prisma-service",
+    "zos-service",
+    "ipfs-service"
+  ]
+}

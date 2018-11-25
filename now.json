@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "client/next.config.js",
+      "use": "@now/next",
+      "config": { "maxLambdaSize": "25mb" }
+    },
+    { "src": "server/index.js", "use": "@now/node-server", "config": {} }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "server/index.js" },
+    { "src": "/(.*)", "dest": "client/$1" }
+  ]
+}

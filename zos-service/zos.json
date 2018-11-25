@@ -1,0 +1,8 @@
+{
+  "zosversion": "2",
+  "name": "zos-service",
+  "version": "0.1.0",
+  "contracts": {
+    "ExampleContract": "ExampleContract"
+  }
+}
