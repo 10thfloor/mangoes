@@ -19,7 +19,7 @@ const config = {
   link: new HttpLink({
     uri: 'http://localhost:4000/api',
   }),
-  createCache,
+  cache: createCache(),
 };
 
 export default withData(config);
