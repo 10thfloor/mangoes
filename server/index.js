@@ -1,21 +1,44 @@
 const { GraphQLServer } = require('graphql-yoga');
-const prisma = require('prisma-service');
+const { prisma } = require('prisma-service');
 const contracts = require('zos-service');
 const { api, mfs } = require('ipfs-service');
 
 const typeDefs = `
   type Query {
-    hello(name: String): String!
+    ping(who: String): String!
   }
 `;
 
 const resolvers = {
   Query: {
-    hello: (_, { name }) => `Hello ${name || 'World'}`,
+    ping: async (root, { who }, { ipfs, contracts, prisma }, info) => {
+      switch (who) {
+        case 'ipfs':
+          const { version } = await ipfs.api.version();
+          return `ipfs alive, version: ${version}`;
+        case 'contracts':
+          return `Smart Contracts alive: ${
+            contracts.ExampleContract._json.contractName
+          }`;
+        case 'prisma':
+          return `Prisma alive, Users: ${JSON.stringify(await prisma.users())}`;
+        default:
+          return 'pong.';
+      }
+    },
   },
 };
 
-const server = new GraphQLServer({ typeDefs, resolvers });
+const server = new GraphQLServer({
+  typeDefs,
+  resolvers,
+  context: ({ req }) => ({
+    ...req,
+    contracts,
+    prisma,
+    ipfs: { api, mfs },
+  }),
+});
 
 const options = {
   endpoint: '/api',
@@ -23,12 +46,6 @@ const options = {
     credentials: true,
     origin: 'http://localhost:3000',
   },
-  context: ({ req }) => ({
-    ...req,
-    prisma,
-    contracts,
-    ipfs: { api, mfs },
-  }),
 };
 
 require('./start')(server, options);

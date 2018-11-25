@@ -9,5 +9,9 @@
     "prisma-service",
     "zos-service",
     "ipfs-service"
+  ],
+  "nohoist": [
+    "mobile",
+    "mobile/**"
   ]
 }
