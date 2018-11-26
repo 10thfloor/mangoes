@@ -2,19 +2,9 @@ const { GraphQLServer } = require('graphql-yoga');
 const { prisma } = require('prisma-service');
 const contracts = require('zos-service');
 const { api, mfs } = require('ipfs-service');
-const ping = require('./util/ping');
 
-const typeDefs = `
-  type Query {
-    ${ping.query}
-  }
-`;
-
-const resolvers = {
-  Query: {
-    ...ping.resolver,
-  },
-};
+const typeDefs = require('./schema');
+const resolvers = require('./resolvers');
 
 const server = new GraphQLServer({
   typeDefs,
@@ -35,4 +25,4 @@ const options = {
   },
 };
 
-require('./start')(server, options);
+require('./util/start')(server, options);
