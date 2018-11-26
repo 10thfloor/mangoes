@@ -1,6 +1,12 @@
 import Web3 from 'web3';
 import { ACTIVE_NETWORK } from './constants';
 
+// COMPAT workaround
+// Prevents -> TypeError: Cannot read property 'apply' of undefined at Provider.sendAsync
+// https://stackoverflow.com/questions/49552264/typeerror-cannot-read-property-apply-of-undefined-at-provider-sendasync?rq=1
+Web3.providers.HttpProvider.prototype.sendAsync =
+  Web3.providers.HttpProvider.prototype.send;
+
 const Network = {
   web3() {
     return new Web3(this.provider());
@@ -25,7 +31,7 @@ const Network = {
 
   provider() {
     if (typeof web3 !== 'undefined') return web3.currentProvider;
-    const provider = `${ACTIVE_NETWORK.host}:${ACTIVE_NETWORK.port}`;
+    const provider = `http://${ACTIVE_NETWORK.host}:${ACTIVE_NETWORK.port}`;
     return new Web3.providers.HttpProvider(provider);
   },
 

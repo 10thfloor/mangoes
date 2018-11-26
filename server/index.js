@@ -2,30 +2,17 @@ const { GraphQLServer } = require('graphql-yoga');
 const { prisma } = require('prisma-service');
 const contracts = require('zos-service');
 const { api, mfs } = require('ipfs-service');
+const ping = require('./util/ping');
 
 const typeDefs = `
   type Query {
-    ping(who: String): String!
+    ${ping.query}
   }
 `;
 
 const resolvers = {
   Query: {
-    ping: async (root, { who }, { ipfs, contracts, prisma }, info) => {
-      switch (who) {
-        case 'ipfs':
-          const { version } = await ipfs.api.version();
-          return `ipfs alive, version: ${version}`;
-        case 'contracts':
-          return `Smart Contracts alive: ${
-            contracts.ExampleContract._json.contractName
-          }`;
-        case 'prisma':
-          return `Prisma alive, Users: ${JSON.stringify(await prisma.users())}`;
-        default:
-          return 'pong.';
-      }
-    },
+    ...ping.resolver,
   },
 };
 

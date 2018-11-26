@@ -8,4 +8,5 @@ export const ACTIVE_NETWORK = config.networks.local;
 const deployData = require(`../zos.${ACTIVE_NETWORK.name}.json`);
 export const EXAMPLE_CONTRACT_ADDRESS =
   deployData.contracts.ExampleContract.address;
-// export const EXAMPLE_CONTRACT_ADDRESS = deployData.proxies.ExampleContract[0].address;
+export const EXAMPLE_CONTRACT_PROXY_ADDRESS =
+  deployData.proxies['zos-service/ExampleContract'][0].address;
