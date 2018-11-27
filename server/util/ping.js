@@ -1,7 +1,7 @@
 const {
   EXAMPLE_CONTRACT_ADDRESS,
   EXAMPLE_CONTRACT_PROXY_ADDRESS,
-} = require('zos-service/lib/constants');
+} = require('packages/smart-contracts/lib/constants');
 
 module.exports = {
   resolver: {

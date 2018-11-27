@@ -1,7 +1,8 @@
 const { GraphQLServer } = require('graphql-yoga');
-const { prisma } = require('prisma-service');
-const contracts = require('zos-service');
-const { api, mfs } = require('ipfs-service');
+
+const { prisma } = require('packages/prisma-api');
+const contracts = require('packages/smart-contracts');
+const { api, mfs } = require('packages/ipfs-service');
 
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');

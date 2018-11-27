@@ -9,10 +9,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "graphql-yoga": "^1.16.7",
-    "ipfs-service": "1.0.0",
-    "prisma-service": "1.0.0",
-    "zos-service": "1.0.0"
+    "graphql-yoga": "^1.16.7"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"

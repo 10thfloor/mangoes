@@ -9,7 +9,6 @@ module.exports = {
       gas: 5000000,
       gasPrice: 5e9,
       network_id: '5777',
-      from: '0x986C8ca9E1E87a540B43704151369b4BC05428bF',
     },
   },
 };

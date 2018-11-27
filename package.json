@@ -4,14 +4,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "workspaces": [
-    "client",
+    "www",
     "server",
-    "prisma-service",
-    "zos-service",
-    "ipfs-service"
-  ],
-  "nohoist": [
-    "mobile",
-    "mobile/**"
+    "packages/*"
   ]
 }
