@@ -1,5 +1,13 @@
 const chalk = require('chalk');
-module.exports = (server, options) => {
+module.exports = (env, server) => {
+  const options = {
+    endpoint: '/api',
+    cors: {
+      credentials: true,
+      origin: 'http://localhost:3000',
+    },
+  };
+
   server.start(options, () => {
     console.log(chalk.yellow('\n✨ Server started! ✨\n'));
     console.log(chalk.magenta('GraphQL API ready @ locahost:4000/api'));

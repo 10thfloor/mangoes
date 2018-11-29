@@ -1,2 +1,4 @@
 const prisma = require('./prisma-client-js');
-module.exports = prisma;
+module.exports = () => {
+  return prisma;
+};

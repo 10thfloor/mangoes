@@ -6,6 +6,6 @@
   "workspaces": [
     "www",
     "server",
-    "packages/*"
+    "services/*"
   ]
 }
