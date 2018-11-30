@@ -1,5 +1,10 @@
 {
   "network": "local",
+<<<<<<< HEAD
   "from": "0x6aE423e04BD3A6f08017DDA5014047b378F6B9fb",
   "expires": "2018-11-29T23:54:04.780Z"
+=======
+  "from": "0xA86a1D7eB4D41F4C326aCc060CE2e19704A58f63",
+  "expires": "2018-11-29T17:04:40.314Z"
+>>>>>>> Changes.
 }

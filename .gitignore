@@ -3,9 +3,4 @@
 .DS_Store
 build
 node_modules
-.expo/*
 npm-debug.*
-*.jks
-*.p12
-*.key
-*.mobileprovision

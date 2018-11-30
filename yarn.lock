@@ -926,6 +926,10 @@ ajv-keywords@^3.0.0, ajv-keywords@^3.1.0:
 ajv@^4.11.5:
   version "4.11.8"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-4.11.8.tgz#82ffb02b29e662ae53bdc20af15947706739c536"
+<<<<<<< HEAD
+=======
+  integrity sha1-gv+wKynmYq5TvcIK8VlHcGc5xTY=
+>>>>>>> Changes.
   dependencies:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
@@ -1202,6 +1206,10 @@ asn1.js@1.0.3:
 asn1.js@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-2.2.1.tgz#c8ba4dd68e84431288126230cb2045bdfa9fbfe1"
+<<<<<<< HEAD
+=======
+  integrity sha1-yLpN1o6EQxKIEmIwyyBFvfqfv+E=
+>>>>>>> Changes.
   dependencies:
     bn.js "^2.0.0"
     inherits "^2.0.1"
@@ -1259,7 +1267,12 @@ async@2.6.1, async@^2.1.2, async@^2.5.0, async@^2.6.0, async@^2.6.1:
 
 async@^1.5.0:
   version "1.5.2"
+<<<<<<< HEAD
   resolved "http://registry.npmjs.org/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+=======
+  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+  integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
+>>>>>>> Changes.
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -2063,6 +2076,10 @@ base64-js@^1.0.2:
 base64url@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/base64url/-/base64url-3.0.1.tgz#6399d572e2bc3f90a9a8b22d5dbb0a32d33f788d"
+<<<<<<< HEAD
+=======
+  integrity sha512-ir1UPr3dkwexU7FdV8qBBbNDRUhMmIekYMFZfi+C/sLNnRESKPl23nB9b2pltqfOQNnGzsDdId90AEtG5tCx4A==
+>>>>>>> Changes.
 
 base@^0.11.1:
   version "0.11.2"
@@ -2085,6 +2102,10 @@ bcrypt-pbkdf@^1.0.0:
 bech32@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/bech32/-/bech32-1.1.3.tgz#bd47a8986bbb3eec34a56a097a84b8d3e9a2dfcd"
+<<<<<<< HEAD
+=======
+  integrity sha512-yuVFUvrNcoJi0sv5phmqc6P+Fl1HjRDRNOOkHY2X/3LBy2bIGNSFx4fZ95HMaXHupuS7cZR15AsvtmCIF4UEyg==
+>>>>>>> Changes.
 
 big.js@^3.1.3:
   version "3.2.0"
@@ -2097,6 +2118,10 @@ big.js@^5.2.2:
 bigi@^1.1.0, bigi@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/bigi/-/bigi-1.4.2.tgz#9c665a95f88b8b08fc05cfd731f561859d725825"
+<<<<<<< HEAD
+=======
+  integrity sha1-nGZalfiLiwj8Bc/XMfVhhZ1yWCU=
+>>>>>>> Changes.
 
 bignumber.js@^7.2.0, bignumber.js@^7.2.1:
   version "7.2.1"
@@ -2121,6 +2146,10 @@ bindings@^1.2.1, bindings@^1.3.0:
 bip32@^1.0.0, bip32@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bip32/-/bip32-1.0.2.tgz#982e2ad2cae6fc6a2f53dda3e6c3be9364674b28"
+<<<<<<< HEAD
+=======
+  integrity sha512-kedLYj8yvYzND+EfzeoMSlGiN7ImiRBF/MClJSZPkMfcU+OQO7ZpL5L/Yg+TunebBZIHhunstiQF//KLKSF5rg==
+>>>>>>> Changes.
   dependencies:
     bs58check "^2.1.1"
     create-hash "^1.2.0"
@@ -2132,6 +2161,10 @@ bip32@^1.0.0, bip32@^1.0.2:
 bip39@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/bip39/-/bip39-2.5.0.tgz#51cbd5179460504a63ea3c000db3f787ca051235"
+<<<<<<< HEAD
+=======
+  integrity sha512-xwIx/8JKoT2+IPJpFEfXoWdYwP7UVAoUxxLNfGCfVowaJE7yg1Y5B1BVPqlUNsBq5/nGwmFkwRJ8xDW4sX8OdA==
+>>>>>>> Changes.
   dependencies:
     create-hash "^1.1.0"
     pbkdf2 "^3.0.9"
@@ -2148,10 +2181,18 @@ bip66@^1.1.0, bip66@^1.1.3:
 bitcoin-ops@^1.3.0, bitcoin-ops@^1.4.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/bitcoin-ops/-/bitcoin-ops-1.4.1.tgz#e45de620398e22fd4ca6023de43974ff42240278"
+<<<<<<< HEAD
+=======
+  integrity sha512-pef6gxZFztEhaE9RY9HmWVmiIHqCb2OyS4HPKkpc6CIiiOa3Qmuoylxc5P2EkU3w+5eTSifI9SEZC88idAIGow==
+>>>>>>> Changes.
 
 bitcoinjs-lib@^4:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/bitcoinjs-lib/-/bitcoinjs-lib-4.0.2.tgz#84fc9d14774c07581ad1795f2444706fc3f7a666"
+<<<<<<< HEAD
+=======
+  integrity sha512-Y6AW91WPDoDQQLy4FejVoH4NvENqvMy+Q/8mnakEzckG1NXiLo0VgnEZyuvZb6lkhE2+YxzTCgpqzbnerOSpEg==
+>>>>>>> Changes.
   dependencies:
     bech32 "^1.1.2"
     bip32 "^1.0.0"
@@ -2196,6 +2237,10 @@ block-stream@*:
 blockstack@^18.1.0:
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/blockstack/-/blockstack-18.1.0.tgz#9a47f3de062c1c9e9f91d7790cc63db2967a1a0e"
+<<<<<<< HEAD
+=======
+  integrity sha512-7N5Bea3dV4p9/g+2g318qoieEvkPT34if1pMFxcqIbpb3t+rBVzSMxjU6JWL1e5VyYWZJdrtHgw7J+uWZQNTew==
+>>>>>>> Changes.
   dependencies:
     ajv "^4.11.5"
     babel-runtime "^6.26.0"
@@ -2241,10 +2286,18 @@ bn.js@^1.0.0:
 bn.js@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-2.2.0.tgz#12162bc2ae71fc40a5626c33438f3a875cd37625"
+<<<<<<< HEAD
+=======
+  integrity sha1-EhYrwq5x/EClYmwzQ486h1zTdiU=
+>>>>>>> Changes.
 
 bn.js@^3.1.1, bn.js@^3.1.2:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-3.3.0.tgz#1138e577889fdc97bbdab51844f2190dfc0ae3d7"
+<<<<<<< HEAD
+=======
+  integrity sha1-ETjld4if3Je72rUYRPIZDfwK49c=
+>>>>>>> Changes.
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.10.0, bn.js@^4.11.3, bn.js@^4.11.6, bn.js@^4.11.8, bn.js@^4.4.0, bn.js@^4.8.0:
   version "4.11.8"
@@ -2274,6 +2327,10 @@ body-parser@1.18.3, body-parser@^1.16.0, body-parser@^1.18.2:
 boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
+<<<<<<< HEAD
+=======
+  integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+>>>>>>> Changes.
 
 boom@5.x.x:
   version "5.2.0"
@@ -2411,6 +2468,10 @@ bs58@4.0.1, bs58@^4.0.0, bs58@^4.0.1:
 bs58check@<3.0.0, bs58check@^2.0.0, bs58check@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/bs58check/-/bs58check-2.1.2.tgz#53b018291228d82a5aa08e7d796fdafda54aebfc"
+<<<<<<< HEAD
+=======
+  integrity sha512-0TS1jicxdU09dwJMNZtVAfzPi6Q6QeN0pM1Fkzrjn+XYHvzMKPU3pHVpva+769iNVSfIYWf7LJ6WR+BuuMf8cA==
+>>>>>>> Changes.
   dependencies:
     bs58 "^4.0.0"
     create-hash "^1.1.0"
@@ -2607,7 +2668,12 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.2, chalk@^2.4
 
 cheerio@^0.22.0:
   version "0.22.0"
+<<<<<<< HEAD
   resolved "http://registry.npmjs.org/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
+=======
+  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
+  integrity sha1-qbqoYKP5tZWmuBsahocxIe06Jp4=
+>>>>>>> Changes.
   dependencies:
     css-select "~1.2.0"
     dom-serializer "~0.1.0"
@@ -2932,6 +2998,10 @@ cross-fetch@2.2.2:
 cross-fetch@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-2.2.3.tgz#e8a0b3c54598136e037f8650f8e823ccdfac198e"
+<<<<<<< HEAD
+=======
+  integrity sha512-PrWWNH3yL2NYIb/7WF/5vFG3DCQiXDOVf8k3ijatbrtnwNuhMWLC7YF7uqf53tbTFDzHIUD8oITw4Bxt8ST3Nw==
+>>>>>>> Changes.
   dependencies:
     node-fetch "2.1.2"
     whatwg-fetch "2.0.4"
@@ -2974,7 +3044,12 @@ crypto-random-string@^1.0.0:
 
 css-select@~1.2.0:
   version "1.2.0"
+<<<<<<< HEAD
   resolved "http://registry.npmjs.org/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
+=======
+  resolved "https://registry.yarnpkg.com/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
+  integrity sha1-KzoRBTnFNV8c2NMUYj6HCxIeyFg=
+>>>>>>> Changes.
   dependencies:
     boolbase "~1.0.0"
     css-what "2.1"
@@ -2984,10 +3059,18 @@ css-select@~1.2.0:
 css-what@2.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.2.tgz#c0876d9d0480927d7d4920dcd72af3595649554d"
+<<<<<<< HEAD
+=======
+  integrity sha512-wan8dMWQ0GUeF7DGEPVjhHemVW/vy6xUYmFzRY8RYqgA0JtXC9rJmbScBjqSu6dg9q0lwPQy6ZAmJVr3PPTvqQ==
+>>>>>>> Changes.
 
 custom-protocol-detection-blockstack@1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/custom-protocol-detection-blockstack/-/custom-protocol-detection-blockstack-1.1.4.tgz#44ae959f3f6f5280cb663ab9502ca4cf15df1091"
+<<<<<<< HEAD
+=======
+  integrity sha512-SkLAAGFaYzYqqxuDpPva33ZiH9hsMtd77MoFA1spfIcPHdGgNa7MW211eX04DVy914/emR+S6dc0RqkuXB372g==
+>>>>>>> Changes.
 
 cyclist@~0.2.2:
   version "0.2.2"
@@ -3212,6 +3295,10 @@ diffie-hellman@^5.0.0:
 dom-serializer@0, dom-serializer@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
+<<<<<<< HEAD
+=======
+  integrity sha1-BzxpdUbOB4DOI75KKOKT5AvDDII=
+>>>>>>> Changes.
   dependencies:
     domelementtype "~1.1.1"
     entities "~1.1.1"
@@ -3227,6 +3314,7 @@ domain-browser@^1.1.1:
 domelementtype@1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.2.1.tgz#578558ef23befac043a1abb0db07635509393479"
+<<<<<<< HEAD
 
 domelementtype@^1.3.0:
   version "1.3.0"
@@ -3235,16 +3323,37 @@ domelementtype@^1.3.0:
 domelementtype@~1.1.1:
   version "1.1.3"
   resolved "http://registry.npmjs.org/domelementtype/-/domelementtype-1.1.3.tgz#bd28773e2642881aec51544924299c5cd822185b"
+=======
+  integrity sha512-SQVCLFS2E7G5CRCMdn6K9bIhRj1bS6QBWZfF0TUPh4V/BbqrQ619IdSS3/izn0FZ+9l+uODzaZjb08fjOfablA==
+
+domelementtype@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.0.tgz#b17aed82e8ab59e52dd9c19b1756e0fc187204c2"
+  integrity sha1-sXrtguirWeUt2cGbF1bg/BhyBMI=
+
+domelementtype@~1.1.1:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.1.3.tgz#bd28773e2642881aec51544924299c5cd822185b"
+  integrity sha1-vSh3PiZCiBrsUVRJJCmcXNgiGFs=
+>>>>>>> Changes.
 
 domhandler@^2.3.0:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-2.4.2.tgz#8805097e933d65e85546f726d60f5eb88b44f803"
+<<<<<<< HEAD
+=======
+  integrity sha512-JiK04h0Ht5u/80fdLMCEmV4zkNh2BcoMFBmZ/91WtYZ8qVXSKjiw7fXMgFPnHcSZgOo3XdinHvmnDUeMf5R4wA==
+>>>>>>> Changes.
   dependencies:
     domelementtype "1"
 
 domutils@1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
+<<<<<<< HEAD
+=======
+  integrity sha1-3NhIiib1Y9YQeeSMn3t+Mjc2gs8=
+>>>>>>> Changes.
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -3252,6 +3361,10 @@ domutils@1.5.1:
 domutils@^1.5.1:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
+<<<<<<< HEAD
+=======
+  integrity sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg==
+>>>>>>> Changes.
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -3303,6 +3416,10 @@ ecdsa-sig-formatter@1.0.10:
 ecurve@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/ecurve/-/ecurve-1.0.6.tgz#dfdabbb7149f8d8b78816be5a7d5b83fcf6de797"
+<<<<<<< HEAD
+=======
+  integrity sha512-/BzEjNfiSuB7jIWKcS/z8FK9jNjmEWvUV2YZ4RLSmcDtP7Lq0m6FvDuSnJpBlDpGRpfRQeTLGLBI8H+kEv0r+w==
+>>>>>>> Changes.
   dependencies:
     bigi "^1.1.0"
     safe-buffer "^5.0.1"
@@ -3327,6 +3444,10 @@ elliptic@6.3.3:
 elliptic@^5.1.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-5.2.1.tgz#fa294b6563c6ddbc9ba3dc8594687ae840858f10"
+<<<<<<< HEAD
+=======
+  integrity sha1-+ilLZWPG3bybo9yFlGh66ECFjxA=
+>>>>>>> Changes.
   dependencies:
     bn.js "^3.1.1"
     brorand "^1.0.1"
@@ -3389,6 +3510,10 @@ enhanced-resolve@^4.1.0:
 entities@^1.1.1, entities@~1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
+<<<<<<< HEAD
+=======
+  integrity sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==
+>>>>>>> Changes.
 
 err-code@^1.1.2:
   version "1.1.2"
@@ -3460,6 +3585,10 @@ es6-map@^0.1.3:
 es6-promise@^4.2.4:
   version "4.2.5"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.5.tgz#da6d0d5692efb461e082c14817fe2427d8f5d054"
+<<<<<<< HEAD
+=======
+  integrity sha512-n6wvpdE43VFtJq+lUDYDBFUwV8TZbuGXLV4D6wKafg13ldznKsyEvatubnmUe31zcvelSzOHF+XbaT+Bl9ObDg==
+>>>>>>> Changes.
 
 es6-set@~0.1.5:
   version "0.1.5"
@@ -4429,6 +4558,10 @@ htmlescape@1.1.1:
 htmlparser2@^3.9.1:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.10.0.tgz#5f5e422dcf6119c0d983ed36260ce9ded0bee464"
+<<<<<<< HEAD
+=======
+  integrity sha512-J1nEUGv+MkXS0weHNWVKJJ+UrLfePxRWpN3C9bEi9fLxL2+ggW94DQvgYVXsaT30PGwYRIZKNZXuyMhp3Di4bQ==
+>>>>>>> Changes.
   dependencies:
     domelementtype "^1.3.0"
     domhandler "^2.3.0"
@@ -4486,16 +4619,28 @@ https-browserify@^1.0.0:
 iced-error@>=0.0.9:
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/iced-error/-/iced-error-0.0.13.tgz#a4a8a4f1461a59c7a2a380b4f745ffd80718f08b"
+<<<<<<< HEAD
+=======
+  integrity sha512-yEEaG8QfyyRL0SsbNNDw3rVgTyqwHFMCuV6jDvD43f/2shmdaFXkqvFLGhDlsYNSolzYHwVLM/CrXt9GygYopA==
+>>>>>>> Changes.
 
 iced-lock@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/iced-lock/-/iced-lock-1.1.0.tgz#6116ef1cab3acd6e6b10893bb27ba622fd3fde72"
+<<<<<<< HEAD
+=======
+  integrity sha1-YRbvHKs6zW5rEIk7snumIv0/3nI=
+>>>>>>> Changes.
   dependencies:
     iced-runtime "^1.0.0"
 
 iced-runtime@>=0.0.1, iced-runtime@^1.0.0, iced-runtime@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/iced-runtime/-/iced-runtime-1.0.3.tgz#2d4f4fb999ab7aa5430b193c77a7fce4118319ce"
+<<<<<<< HEAD
+=======
+  integrity sha1-LU9PuZmreqVDCxk8d6f85BGDGc4=
+>>>>>>> Changes.
 
 iconv-lite@0.4.23:
   version "0.4.23"
@@ -5158,6 +5303,10 @@ json-schema@0.2.3:
 json-stable-stringify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
+<<<<<<< HEAD
+=======
+  integrity sha1-mnWdOcXy/1A/1TAGRu1EX4jE+a8=
+>>>>>>> Changes.
   dependencies:
     jsonify "~0.0.0"
 
@@ -5188,6 +5337,10 @@ jsonify@~0.0.0:
 jsontokens@^0.7.8:
   version "0.7.8"
   resolved "https://registry.yarnpkg.com/jsontokens/-/jsontokens-0.7.8.tgz#9210bb98944ee93a156c72754c1c281b2c52d419"
+<<<<<<< HEAD
+=======
+  integrity sha512-vTZ06cDSDoFeXJUnZNFHsh8aP+L3Xz5Ke7XPb6nyT3n5wb9uxyq4TE8gUl0H4hmzSe/YIrDi+mneuHIh37AMiA==
+>>>>>>> Changes.
   dependencies:
     asn1.js "^4.9.1"
     base64url "^3.0.0"
@@ -5247,6 +5400,10 @@ keccakjs@^0.2.0, keccakjs@^0.2.1:
 key-encoder@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/key-encoder/-/key-encoder-1.1.6.tgz#0135582cd3d0a7eb792d94eca387b681e8e5a2ad"
+<<<<<<< HEAD
+=======
+  integrity sha1-ATVYLNPQp+t5LZTso4e2gejloq0=
+>>>>>>> Changes.
   dependencies:
     asn1.js "^2.2.0"
     bn.js "^3.1.2"
@@ -5406,10 +5563,18 @@ locate-path@^3.0.0:
 lodash.assignin@^4.0.9:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assignin/-/lodash.assignin-4.2.0.tgz#ba8df5fb841eb0a3e8044232b0e263a8dc6a28a2"
+<<<<<<< HEAD
+=======
+  integrity sha1-uo31+4QesKPoBEIysOJjqNxqKKI=
+>>>>>>> Changes.
 
 lodash.bind@^4.1.4:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/lodash.bind/-/lodash.bind-4.2.1.tgz#7ae3017e939622ac31b7d7d7dcb1b34db1690d35"
+<<<<<<< HEAD
+=======
+  integrity sha1-euMBfpOWIqwxt9fX3LGzTbFpDTU=
+>>>>>>> Changes.
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -5418,6 +5583,10 @@ lodash.debounce@^4.0.8:
 lodash.defaults@^4.0.1:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
+<<<<<<< HEAD
+=======
+  integrity sha1-0JF4cW/+pN3p5ft7N/bwgCJ0WAw=
+>>>>>>> Changes.
 
 lodash.filter@^4.4.0, lodash.filter@^4.6.0:
   version "4.6.0"
@@ -5438,6 +5607,10 @@ lodash.flowright@^3.5.0:
 lodash.foreach@^4.3.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
+<<<<<<< HEAD
+=======
+  integrity sha1-Gmo16s5AEoDH8G3d7DUWWrJ+PlM=
+>>>>>>> Changes.
 
 lodash.includes@^4.3.0:
   version "4.3.0"
@@ -5494,14 +5667,26 @@ lodash.padstart@^4.6.1:
 lodash.pick@^4.2.1:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
+<<<<<<< HEAD
+=======
+  integrity sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM=
+>>>>>>> Changes.
 
 lodash.reduce@^4.4.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.reduce/-/lodash.reduce-4.6.0.tgz#f1ab6b839299ad48f784abbf476596f03b914d3b"
+<<<<<<< HEAD
+=======
+  integrity sha1-8atrg5KZrUj3hKu/R2WW8DuRTTs=
+>>>>>>> Changes.
 
 lodash.reject@^4.4.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.reject/-/lodash.reject-4.6.0.tgz#80d6492dc1470864bbf583533b651f42a9f52415"
+<<<<<<< HEAD
+=======
+  integrity sha1-gNZJLcFHCGS79YNTO2UfQqn1JBU=
+>>>>>>> Changes.
 
 lodash.repeat@^4.1.0:
   version "4.1.0"
@@ -5510,6 +5695,10 @@ lodash.repeat@^4.1.0:
 lodash.some@^4.4.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.some/-/lodash.some-4.6.0.tgz#1bb9f314ef6b8baded13b549169b2a945eb68e4d"
+<<<<<<< HEAD
+=======
+  integrity sha1-G7nzFO9ri63tE7VJFpsqlF62jk0=
+>>>>>>> Changes.
 
 lodash.uniqby@^4.7.0:
   version "4.7.0"
@@ -5633,6 +5822,10 @@ merge-descriptors@1.0.1:
 merkle-lib@^2.0.10:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/merkle-lib/-/merkle-lib-2.0.10.tgz#82b8dbae75e27a7785388b73f9d7725d0f6f3326"
+<<<<<<< HEAD
+=======
+  integrity sha1-grjbrnXieneFOItz+ddyXQ9vMyY=
+>>>>>>> Changes.
 
 methods@~1.1.2:
   version "1.1.2"
@@ -5801,6 +5994,10 @@ moment@^2.11.2, moment@^2.22.1:
 more-entropy@>=0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/more-entropy/-/more-entropy-0.0.7.tgz#67bfc6f7a86f26fbc37aac83fd46d88c61d109b5"
+<<<<<<< HEAD
+=======
+  integrity sha1-Z7/G96hvJvvDeqyD/UbYjGHRCbU=
+>>>>>>> Changes.
   dependencies:
     iced-runtime ">=0.0.1"
 
@@ -6273,6 +6470,10 @@ npmlog@^4.0.1, npmlog@^4.0.2:
 nth-check@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
+<<<<<<< HEAD
+=======
+  integrity sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==
+>>>>>>> Changes.
   dependencies:
     boolbase "~1.0.0"
 
@@ -6746,7 +6947,12 @@ process@~0.5.1:
 
 progress@~1.1.2:
   version "1.1.8"
+<<<<<<< HEAD
   resolved "http://registry.npmjs.org/progress/-/progress-1.1.8.tgz#e260c78f6161cdd9b0e56cc3e0a85de17c7a57be"
+=======
+  resolved "https://registry.yarnpkg.com/progress/-/progress-1.1.8.tgz#e260c78f6161cdd9b0e56cc3e0a85de17c7a57be"
+  integrity sha1-4mDHj2Fhzdmw5WzD4Khd4Xx6V74=
+>>>>>>> Changes.
 
 promise-inflight@^1.0.1:
   version "1.0.1"
@@ -6960,7 +7166,12 @@ punycode@^1.2.4, punycode@^1.4.1:
 
 pushdata-bitcoin@^1.0.1:
   version "1.0.1"
+<<<<<<< HEAD
   resolved "http://registry.npmjs.org/pushdata-bitcoin/-/pushdata-bitcoin-1.0.1.tgz#15931d3cd967ade52206f523aa7331aef7d43af7"
+=======
+  resolved "https://registry.yarnpkg.com/pushdata-bitcoin/-/pushdata-bitcoin-1.0.1.tgz#15931d3cd967ade52206f523aa7331aef7d43af7"
+  integrity sha1-FZMdPNlnreUiBvUjqnMxrvfUOvc=
+>>>>>>> Changes.
   dependencies:
     bitcoin-ops "^1.3.0"
 
@@ -6971,6 +7182,10 @@ qs@6.5.2, qs@^6.5.2, qs@~6.5.2:
 query-string@^4.3.2:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
+<<<<<<< HEAD
+=======
+  integrity sha1-u7aTucqRXCMlFbIosaArYJBD2+s=
+>>>>>>> Changes.
   dependencies:
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
@@ -7413,6 +7628,10 @@ scheduler@^0.11.2:
 schema-inspector@^1.6.4:
   version "1.6.8"
   resolved "https://registry.yarnpkg.com/schema-inspector/-/schema-inspector-1.6.8.tgz#b9e53983cc55ff2dbd7b65e3dbe085d9d1285f2a"
+<<<<<<< HEAD
+=======
+  integrity sha1-ueU5g8xV/y29e2Xj2+CF2dEoXyo=
+>>>>>>> Changes.
   dependencies:
     async "^1.5.0"
 
@@ -7773,6 +7992,10 @@ sprintf-js@1.1.0:
 sprintf-js@^1.0.3:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.1.1.tgz#36be78320afe5801f6cea3ee78b6e5aab940ea0c"
+<<<<<<< HEAD
+=======
+  integrity sha1-Nr54Mgr+WAH2zqPueLblqrlA6gw=
+>>>>>>> Changes.
 
 sprintf-js@~1.0.2:
   version "1.0.3"
@@ -8190,6 +8413,10 @@ timers-browserify@^2.0.4:
 tiny-secp256k1@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tiny-secp256k1/-/tiny-secp256k1-1.0.1.tgz#fc6f96529c22b92be91e12de4040fdd9245f7835"
+<<<<<<< HEAD
+=======
+  integrity sha512-Wz2kMPWtCI5XBftFeF3bUL8uz2+VlasniKwOkRPjvL7h1QVd9rbhrve/HWUu747kJKzVf1XHonzcdM4Ut8fvww==
+>>>>>>> Changes.
   dependencies:
     bindings "^1.3.0"
     bn.js "^4.11.8"
@@ -8269,6 +8496,10 @@ trim@0.0.1:
 triplesec@^3.0.26:
   version "3.0.27"
   resolved "https://registry.yarnpkg.com/triplesec/-/triplesec-3.0.27.tgz#43ba5a9f0e11ebba20c7563ecca947b2f94e82c5"
+<<<<<<< HEAD
+=======
+  integrity sha512-FDhkxa3JYnPOerOd+8k+SBmm7cb7KkyX+xXwNFV3XV6dsQgHuRvjtbnzWfPJ2kimeR8ErjZfPd/6r7RH6epHDw==
+>>>>>>> Changes.
   dependencies:
     iced-error ">=0.0.9"
     iced-lock "^1.0.1"
@@ -8396,6 +8627,10 @@ typedarray@^0.0.6:
 typeforce@^1.11.3, typeforce@^1.11.5:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/typeforce/-/typeforce-1.16.0.tgz#060f871420f4ed90d411e0606bebc62a0889ad55"
+<<<<<<< HEAD
+=======
+  integrity sha512-V60F7OHPH7vPlgIU73vYyeebKxWjQqCTlge+MvKlVn09PIhCOi/ZotowYdgREHB5S1dyHOr906ui6NheYXjlVQ==
+>>>>>>> Changes.
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
@@ -8420,6 +8655,10 @@ uglify-js@^2.8.29:
 uglify-js@^3.1.9:
   version "3.4.9"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.9.tgz#af02f180c1207d76432e473ed24a28f4a782bae3"
+<<<<<<< HEAD
+=======
+  integrity sha512-8CJsbKOtEbnJsTyv6LE6m6ZKniqMiFWmm9sRbopbkGs3gMPPfd3Fh8iIA4Ykv5MgaTbqHr4BaoGLJLZNhsrW1Q==
+>>>>>>> Changes.
   dependencies:
     commander "~2.17.1"
     source-map "~0.6.1"
@@ -8536,6 +8775,10 @@ unique-string@^1.0.0:
 unorm@^1.3.3:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/unorm/-/unorm-1.4.1.tgz#364200d5f13646ca8bcd44490271335614792300"
+<<<<<<< HEAD
+=======
+  integrity sha1-NkIA1fE2RsqLzURJAnEzVhR5IwA=
+>>>>>>> Changes.
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
@@ -8697,6 +8940,10 @@ validate-npm-package-license@^3.0.1:
 validator@^7.0.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/validator/-/validator-7.2.0.tgz#a63dcbaba51d4350bf8df20988e0d5a54d711791"
+<<<<<<< HEAD
+=======
+  integrity sha512-c8NGTUYeBEcUIGeMppmNVKHE7wwfm3mYbNZxV+c5mlv9fDHI7Ad3p07qfNrn/CvpdkK2k61fOLRO2sTEhgQXmg==
+>>>>>>> Changes.
 
 varint@^5.0.0, varint@~5.0.0:
   version "5.0.0"
@@ -8705,6 +8952,10 @@ varint@^5.0.0, varint@~5.0.0:
 varuint-bitcoin@^1.0.4:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/varuint-bitcoin/-/varuint-bitcoin-1.1.0.tgz#7a343f50537607af6a3059312b9782a170894540"
+<<<<<<< HEAD
+=======
+  integrity sha512-jCEPG+COU/1Rp84neKTyDJQr478/hAfVp5xxYn09QEH0yBjbmPeMfuuQIrp+BUD83hybtYZKhr5elV3bvdV1bA==
+>>>>>>> Changes.
   dependencies:
     safe-buffer "^5.1.1"
 
@@ -9160,6 +9411,10 @@ widest-line@^2.0.0:
 wif@^2.0.1, wif@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/wif/-/wif-2.0.6.tgz#08d3f52056c66679299726fade0d432ae74b4704"
+<<<<<<< HEAD
+=======
+  integrity sha1-CNP1IFbGZnkplyb63g1DKudLRwQ=
+>>>>>>> Changes.
   dependencies:
     bs58check "<3.0.0"
 
@@ -9378,6 +9633,10 @@ zen-observable@^0.8.0, zen-observable@^0.8.10:
 zone-file@^0.2.2:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/zone-file/-/zone-file-0.2.3.tgz#816b4975e5859b869d71979071e4912d097b404f"
+<<<<<<< HEAD
+=======
+  integrity sha512-JVLtJPAo09NRdrwQrxX917ZQFUXEPDlH94XiISsZQJTJBSHuRgbtk9sSjxv5BAEByQwKwXBbQSK6VG2m4rLNmQ==
+>>>>>>> Changes.
 
 zos-lib@^2.0.1:
   version "2.0.1"
