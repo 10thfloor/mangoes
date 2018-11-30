@@ -1,13 +1,9 @@
 const IPFS = require('ipfs-api');
-const mfs = require('ipfs-mfs');
 
-const api = IPFS('/ip4/127.0.0.1/tcp/5001');
+const api = new IPFS({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' });
 
 module.exports = {
   api() {
     return api;
-  },
-  mfs() {
-    return mfs;
   },
 };

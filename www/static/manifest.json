@@ -1,0 +1,12 @@
+{
+  "name": "Mangoes, Blockstack",
+  "start_url": "localhost:3000",
+  "description": "Example Blockstack intergration",
+  "icons": [
+    {
+      "src": "https://helloblockstack.com/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

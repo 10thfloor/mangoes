@@ -1,15 +1,16 @@
 {
-  "name": "client",
+  "name": "www",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "apollo-link-http": "^1.5.7",
+    "blockstack": "^18.1.0",
     "graphql-tag": "^2.10.0",
     "next": "^7.0.2",
     "next-apollo": "^2.0.2",

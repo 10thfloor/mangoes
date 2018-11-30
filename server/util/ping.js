@@ -1,7 +1,7 @@
 const {
   EXAMPLE_CONTRACT_ADDRESS,
   EXAMPLE_CONTRACT_PROXY_ADDRESS,
-} = require('packages/smart-contracts/lib/constants');
+} = require('smart-contracts-service/lib/constants');
 
 module.exports = {
   resolver: {
