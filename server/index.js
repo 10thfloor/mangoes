@@ -2,7 +2,7 @@ const { GraphQLServer } = require('graphql-yoga');
 
 const prisma = require('prisma-service');
 const contracts = require('smart-contracts-service');
-const { api, mfs } = require('ipfs-service');
+const api = require('ipfs-service');
 
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
@@ -20,7 +20,6 @@ require('./util/start')(
       prisma: prisma(NODE_ENV),
       ipfs: {
         api: api(NODE_ENV),
-        files: mfs(NODE_ENV),
       },
     }),
   }),
