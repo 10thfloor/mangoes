@@ -1,21 +1,13 @@
 {
   "name": "www",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server.js",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "dev": "nuxt"
   },
   "dependencies": {
-    "apollo-link-http": "^1.5.7",
-    "blockstack": "^18.1.0",
+    "@nuxtjs/apollo": "^4.0.0-rc2.3",
     "graphql-tag": "^2.10.0",
-    "next": "^7.0.2",
-    "next-apollo": "^2.0.2",
-    "react": "^16.6.3",
-    "react-apollo": "^2.3.1",
-    "react-dom": "^16.6.3"
+    "nuxt": "^2.3.4"
   }
 }

@@ -21,7 +21,6 @@ module.exports = {
             );
             return `Got value: ${(await contract.x()).toString()} from: ${EXAMPLE_CONTRACT_PROXY_ADDRESS}`;
           } catch (e) {
-            console.log(e);
             return 'offline';
           }
 
