@@ -1,11 +1,11 @@
 module.exports = {
   mode: 'spa',
   head: {
-    title: pkg.name,
+    title: 'Vue, Ethereum, BlockStack, IPFS',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'description', name: 'description', content: 'Mangoes!' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },

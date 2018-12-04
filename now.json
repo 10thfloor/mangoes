@@ -2,10 +2,10 @@
   "version": 2,
   "builds": [
     { "src": "www/package.json", "use": "@now/static-build" },
-    { "src": "server/index.js", "use": "@now/node-server" }
+    { "src": "api/index.js", "use": "@now/node-server" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "server/index.js" },
+    { "src": "/api/(.*)", "dest": "api/index.js" },
     { "src": "/(.*)", "dest": "www/$1" }
   ]
 }
