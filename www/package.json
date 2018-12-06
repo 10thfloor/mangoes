@@ -5,10 +5,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "nuxt --spa",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "now-build": "nuxt generate"
+    "build": "nuxt build --spa",
+    "start": "nuxt start --spa",
+    "generate": "nuxt generate --spa",
+    "now-build": "nuxt generate --spa"
   },
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.0-rc2.3",

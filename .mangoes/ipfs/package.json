@@ -1,5 +1,5 @@
 {
-  "name": "mangoes-ipfs-service",
+  "name": "mangoes-ipfs",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",

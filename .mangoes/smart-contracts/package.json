@@ -1,20 +1,24 @@
 {
-  "name": "mangoes-smart-contracts-service",
+  "name": "mangoes-smart-contracts",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "console": "npx truffle console --network local"
+    "start": "npx ganache-cli --deterministic --networkId=5777"
   },
   "dependencies": {
+    "ganache-cli": "^6.2.3",
+    "zos": "^2.0.1",
+    "truffle-contract": "^3.0.6",
+    "web3": "^1.0.0-beta.36",
+    "zos-lib": "^2.0.1"
+  },
+  "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "truffle-contract": "^3.0.6",
-    "web3": "^1.0.0-beta.36",
-    "zos-lib": "^2.0.1"
+    "babel-register": "^6.26.0"
   }
 }

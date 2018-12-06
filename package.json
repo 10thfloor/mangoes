@@ -14,8 +14,7 @@
   "workspaces": [
     "www",
     "api",
-    "services/*",
-    "deploy/*"
+    ".mangoes/*"
   ],
   "dependencies": {
     "eslint-config-prettier": "^3.3.0",

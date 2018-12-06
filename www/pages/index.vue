@@ -1,5 +1,8 @@
 <template>
-  <pre>{{ ping }}</pre>
+  <div>
+    <h1>Vue, Ethereum, IPFS</h1>
+    <pre>Connection status: {{ ping }}</pre>
+  </div>
 </template>
 
 <script>
