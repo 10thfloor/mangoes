@@ -1,12 +1,18 @@
 <template>
   <div>
-    <h1>Vue, Ethereum, IPFS</h1>
+    <h1>Vue, Ethereum, Blockstack, IPFS</h1>
     <pre>Connection status: {{ ping }}</pre>
   </div>
 </template>
 
+<style>
+h1 {
+  font-family: Arial;
+}
+</style>
+
 <script>
-import gql from "graphql-tag";
+import gql from 'graphql-tag'
 
 export default {
   apollo: {
@@ -19,9 +25,9 @@ export default {
         }
       `,
       update(data) {
-        return data;
+        return data
       }
     }
   }
-};
+}
 </script>

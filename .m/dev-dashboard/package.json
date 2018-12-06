@@ -1,0 +1,24 @@
+{
+  "name": "mangoes-dev-dashboard",
+  "version": "1.0.0",
+  "description": "Mangoes Dev Dashboard",
+  "author": "Mackenzie Kieran",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --port 3333",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "nodemon": "^1.11.0",
+    "prettier": "1.14.3"
+  }
+}

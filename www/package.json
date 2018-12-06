@@ -1,10 +1,11 @@
 {
   "name": "mangoes-www",
-  "description": "nuxt app!",
   "version": "1.0.0",
-  "license": "MIT",
+  "description": "Vue, Ethereum, Blockstack, IPFS",
+  "author": "Mackenzie Kieran",
+  "private": true,
   "scripts": {
-    "dev": "nuxt --spa",
+    "dev": "webpack-dashboard -- nuxt --spa",
     "build": "nuxt build --spa",
     "start": "nuxt start --spa",
     "generate": "nuxt generate --spa",
@@ -13,9 +14,17 @@
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.0-rc2.3",
     "blockstack": "^18.1.0",
+    "cross-env": "^5.2.0",
     "graphql-tag": "^2.10.0",
-    "nuxt": "^2.3.4",
+    "nuxt": "^2.0.0",
     "vue-pose": "^0.5.0",
     "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "nodemon": "^1.11.0",
+    "nuxt-webpackdashboard": "^1.0.0",
+    "prettier": "1.14.3"
   }
 }

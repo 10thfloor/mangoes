@@ -1,16 +1,16 @@
-import Vuex from 'vuex';
+import Vuex from 'vuex'
 
 const createStore = () => {
   return new Vuex.Store({
     state: () => ({
-      counter: 0,
+      counter: 0
     }),
     mutations: {
       increment(state) {
-        state.counter++;
-      },
-    },
-  });
-};
+        state.counter++
+      }
+    }
+  })
+}
 
-export default createStore;
+export default createStore
