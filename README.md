@@ -1,9 +1,3 @@
-### TODO
-
-[] Add blockstack auth to Vuex store (eg. https://github.com/blockstack/blockstack-todos)
-[] Auto deploy/update contracts for local dev
-[] IPFS static site deployment using IPFS/BlockStack
-
 ### Resources:
 
 - https://zeit.co/docs/v2/deployments/basics/

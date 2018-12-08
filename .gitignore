@@ -1,9 +1,11 @@
 .next
 .vscode
+.nuxt
 .DS_Store
-build
 node_modules
 npm-debug.*
 build
 zos.dev-*
 dist
+yarn-debug.log*
+yarn-error.log*

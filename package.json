@@ -1,23 +1,11 @@
 {
   "private": true,
-  "name": "now-prisma",
+  "name": "mangoes",
   "version": "1.0.0",
   "license": "MIT",
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "plugin:vue/essential",
-      "plugin:prettier/recommended",
-      "eslint:recommended"
-    ]
-  },
   "workspaces": [
     "www",
     "api",
     ".m/*"
-  ],
-  "dependencies": {
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-prettier": "^3.0.0"
-  }
+  ]
 }
