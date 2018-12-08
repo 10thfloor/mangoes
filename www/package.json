@@ -5,7 +5,7 @@
   "author": "Mackenzie Kieran",
   "private": true,
   "scripts": {
-    "dev": "webpack-dashboard -- nuxt --spa",
+    "dev": "nuxt --spa",
     "build": "nuxt build --spa",
     "start": "nuxt start --spa",
     "generate": "nuxt generate --spa",
@@ -24,7 +24,6 @@
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-prettier": "2.6.2",
     "nodemon": "^1.11.0",
-    "nuxt-webpackdashboard": "^1.0.0",
     "prettier": "1.14.3"
   }
 }

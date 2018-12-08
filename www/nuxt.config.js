@@ -37,7 +37,7 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/apollo', 'nuxt-webpackdashboard'],
+  modules: ['@nuxtjs/apollo'],
 
   /*
   ** Apollo config
