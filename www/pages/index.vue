@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Vue, Ethereum, Blockstack, IPFS ...</h1>
+    <h1>Mangoes: Vue, Ethereum, Blockstack, IPFS ...</h1>
     <pre>Connection status: {{ ping }}</pre>
   </div>
 </template>

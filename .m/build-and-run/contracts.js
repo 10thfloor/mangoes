@@ -5,20 +5,62 @@ var del = require('del');
 const path = require('path');
 
 const addContracts = () => {
+  const contracts = [];
+
+  fs.readdirSync(
+    path.resolve(__dirname, '../smart-contracts/contracts'),
+  ).forEach(file => {
+    contracts.push(file.split('.').shift());
+  });
+
+  const zos = JSON.parse(
+    fs.readFileSync(path.resolve(__dirname, '../smart-contracts/zos.json')),
+  );
+
+  zos.contracts = {};
+
+  contracts.forEach(c => {
+    zos.contracts[c] = c;
+  });
+
+  fs.writeFileSync(
+    path.resolve(__dirname, '../smart-contracts/zos.json'),
+    JSON.stringify(zos),
+  );
+
+  // TODO: Better checks for contracts with errors, duped names...etc
+
   return new Promise((resolve, reject) => {
-    const run = spawn('node', ['./node_modules/.bin/zos add ExampleContract'], {
-      shell: true,
-      cwd: path.resolve(__dirname, '../smart-contracts'),
+    const track = done();
+    contracts.forEach(name => {
+      const run = spawn('node', [`./node_modules/.bin/zos add ${name}`], {
+        shell: true,
+        cwd: path.resolve(__dirname, '../smart-contracts'),
+      });
+
+      run.stdout.on('data', data => {
+        console.log(data.toString().trim());
+      });
+
+      run.on('exit', () => {
+        track();
+      });
+
+      run.on('error', err => {
+        console.log(err);
+        reject(err);
+      });
     });
 
-    run.on('exit', () => {
-      resolve(run);
-    });
-
-    run.stdout.on('data', data => {
-      console.log(data.toString().trim());
-    });
-    run.stderr.on('error', err => reject(err));
+    function done() {
+      count = 0;
+      return () => {
+        count = count + 1;
+        if (count === contracts.length) {
+          resolve();
+        }
+      };
+    }
   });
 };
 
@@ -30,7 +72,12 @@ const pushContracts = () => {
     });
 
     run.on('exit', () => {
-      resolve(run);
+      resolve();
+    });
+
+    run.on('error', err => {
+      console.log(err);
+      reject(err);
     });
 
     run.stdout.on('data', data => {
@@ -54,7 +101,12 @@ const restartSession = () => {
     );
 
     run.on('exit', () => {
-      resolve(run);
+      resolve();
+    });
+
+    run.on('error', err => {
+      console.log(err);
+      reject(err);
     });
 
     run.stdout.on('data', data => {
@@ -95,7 +147,13 @@ const runGanache = () => {
 
 const watchContracts = async cb => {
   console.log('Statring ganache-cli');
-  let ganache = await runGanache();
+  let ganache;
+
+  ganache = await runGanache();
+  await restartSession();
+  await addContracts();
+  await pushContracts();
+
   console.log('Done...');
   const watcher = watch(
     [path.resolve(__dirname, '../../contracts/*.sol')],
@@ -110,14 +168,16 @@ const watchContracts = async cb => {
           );
 
           console.log('Restarting ganache...');
+
           ganache = await runGanache();
+          await restartSession();
           await addContracts();
           await pushContracts();
-          await restartSession();
+
           console.log('Ganache restarted, contracts re-deployed ...');
           cb();
         });
-      }, 0);
+      }, 1000);
     },
   );
 };

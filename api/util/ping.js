@@ -1,5 +1,6 @@
 const {
   EXAMPLE_CONTRACT_PROXY_ADDRESS,
+  EXAMPLE_CONTRACT_ADDRESS,
 } = require('mangoes-smart-contracts/lib/constants');
 
 module.exports = {
@@ -20,7 +21,10 @@ module.exports = {
             );
             return `Got value: ${(await contract.x()).toString()} from: ${EXAMPLE_CONTRACT_PROXY_ADDRESS}`;
           } catch (e) {
-            return 'offline';
+            const contract = contracts.ExampleContract.at(
+              EXAMPLE_CONTRACT_ADDRESS,
+            );
+            return `Got value: ${(await contract.x()).toString()} from: ${EXAMPLE_CONTRACT_PROXY_ADDRESS}`;
           }
 
         case 'prisma':

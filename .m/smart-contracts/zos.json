@@ -1,8 +1,1 @@
-{
-  "zosversion": "2",
-  "name": "zos-service",
-  "version": "0.1.0",
-  "contracts": {
-    "ExampleContract": "ExampleContract"
-  }
-}
+{"zosversion":"2","name":"mangoes-zos-service","version":"0.1.0","contracts":{"ExampleContract":"ExampleContract","NewContract":"NewContract"}}
