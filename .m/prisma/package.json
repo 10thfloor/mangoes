@@ -8,6 +8,7 @@
     "deploy-dev": "prisma deploy"
   },
   "dependencies": {
+    "prisma": "^1.22.2",
     "prisma-client-lib": "^1.21.0"
   }
 }

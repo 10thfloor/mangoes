@@ -4,11 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
     "graphql-yoga": "^1.16.7"
   },
   "devDependencies": {

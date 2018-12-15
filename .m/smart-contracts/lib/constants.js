@@ -17,6 +17,8 @@ export let EXAMPLE_CONTRACT_PROXY_ADDRESS = '';
 
 if (deployData) {
   EXAMPLE_CONTRACT_ADDRESS = deployData.contracts.ExampleContract.address;
-  EXAMPLE_CONTRACT_PROXY_ADDRESS =
-    deployData.proxies['zos-service/ExampleContract'][0].address;
+  if (deployData.proxies['zos-service/ExampleContract']) {
+    EXAMPLE_CONTRACT_PROXY_ADDRESS =
+      deployData.proxies['zos-service/ExampleContract'][0].address;
+  }
 }
