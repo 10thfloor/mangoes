@@ -3,16 +3,10 @@ const chalk = require('chalk');
 const { runClient, runApi, runDashboard, runDashboardApi } = require('./serve');
 const { watchContracts } = require('./contracts');
 
-const serve = gulp.parallel(
-  runClient,
-  runApi,
-  runDashboard,
-  runDashboardApi,
-  watchContracts,
-);
+const serve = gulp.parallel(runClient, runApi, runDashboard, runDashboardApi);
 serve.description = 'Start local development servers...';
 
-const defaultTask = gulp.series(serve, cb => {
+const defaultTask = gulp.series([watchContracts, serve], cb => {
   console.log('Starting...');
 
   console.log(

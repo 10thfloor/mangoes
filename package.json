@@ -3,6 +3,9 @@
   "name": "mangoes",
   "version": "1.0.0",
   "license": "MIT",
+  "scripts": {
+    "start": "cd .m/build-and-run && gulp -S"
+  },
   "workspaces": [
     "www",
     "api",

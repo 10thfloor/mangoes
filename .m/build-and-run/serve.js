@@ -21,6 +21,7 @@ const runApi = cb => {
       path.resolve(__dirname, '../../api/**/*.js'),
       path.resolve(__dirname, '../smart-contracts/build/*.json'),
     ],
+    quiet: true,
   }).on('crash', function() {
     console.error('API server has crashed!\n');
     stream.emit('restart', 10); // restart the server in 10 seconds
