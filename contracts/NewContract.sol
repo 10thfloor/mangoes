@@ -14,4 +14,4 @@ contract NewContract is Initializable {
   }
 }
 
-//
+// OK?

@@ -161,10 +161,11 @@ const runGanache = () => {
 const watchContracts = async cb => {
   console.log('Statring ganache-cli');
   let ganache, starting;
-  startig = true;
+  starting = true;
   ganache = await runGanache();
-  await restartSession();
+  
   await copyContracts();
+  await restartSession();
   await addContracts();
   await pushContracts();
 
@@ -172,33 +173,35 @@ const watchContracts = async cb => {
   const watcher = watch(
     [path.resolve(__dirname, '../../contracts/*.sol')],
     function(cb) {
-      ganache.kill();
-      setTimeout(() => {
-        del(path.resolve(__dirname, '../smart-contracts/contracts/*.sol'), {
-          force: true,
-        }).then(() => {
-          src(path.resolve(__dirname, '../../contracts/*.sol'))
-            .pipe(dest(path.resolve(__dirname, '../smart-contracts/contracts')))
-            .on('finish', async () => {
-              if (starting) {
-                starting = false;
+      if (starting) {
+        starting = false;
+        cb();
+        return;
+      } else {
+        ganache.kill();
+        setTimeout(() => {
+          del(path.resolve(__dirname, '../smart-contracts/contracts/*.sol'), {
+            force: true,
+          }).then(() => {
+            src(path.resolve(__dirname, '../../contracts/*.sol'))
+              .pipe(
+                dest(path.resolve(__dirname, '../smart-contracts/contracts')),
+              )
+              .on('finish', async () => {
+                console.log('Restarting ganache...');
+
+                ganache = await runGanache();
+
+                await restartSession();
+                await addContracts();
+                await pushContracts();
+
+                console.log('Ganache restarted, contracts re-deployed ...');
                 cb();
-                return;
-              }
-
-              console.log('Restarting ganache...');
-
-              ganache = await runGanache();
-
-              await restartSession();
-              await addContracts();
-              await pushContracts();
-
-              console.log('Ganache restarted, contracts re-deployed ...');
-              cb();
-            });
-        });
-      }, 1000);
+              });
+          });
+        }, 500);
+      }
     },
   );
 };
