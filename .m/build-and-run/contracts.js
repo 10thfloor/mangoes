@@ -4,6 +4,19 @@ const { src, dest, watch, series } = require('gulp');
 var del = require('del');
 const path = require('path');
 
+const copyContracts = () => {
+  console.log('Copying contracts...');
+  return new Promise(resolve => {
+    del(path.resolve(__dirname, '../smart-contracts/contracts/*.sol'), {
+      force: true,
+    }).then(async () => {
+      src(path.resolve(__dirname, '../../contracts/*.sol'))
+        .pipe(dest(path.resolve(__dirname, '../smart-contracts/contracts')))
+        .on('finish', resolve);
+    });
+  });
+};
+
 const addContracts = () => {
   const contracts = [];
 
@@ -147,9 +160,11 @@ const runGanache = () => {
 
 const watchContracts = async cb => {
   console.log('Statring ganache-cli');
-  let ganache;
-
+  let ganache, starting;
+  starting = true;
   ganache = await runGanache();
+  
+  await copyContracts();
   await restartSession();
   await addContracts();
   await pushContracts();
@@ -158,26 +173,35 @@ const watchContracts = async cb => {
   const watcher = watch(
     [path.resolve(__dirname, '../../contracts/*.sol')],
     function(cb) {
-      ganache.kill();
-      setTimeout(() => {
-        del(path.resolve(__dirname, '../smart-contracts/contracts/*.sol'), {
-          force: true,
-        }).then(async () => {
-          src(path.resolve(__dirname, '../../contracts/*.sol')).pipe(
-            dest(path.resolve(__dirname, '../smart-contracts/contracts')),
-          );
+      if (starting) {
+        starting = false;
+        cb();
+        return;
+      } else {
+        ganache.kill();
+        setTimeout(() => {
+          del(path.resolve(__dirname, '../smart-contracts/contracts/*.sol'), {
+            force: true,
+          }).then(() => {
+            src(path.resolve(__dirname, '../../contracts/*.sol'))
+              .pipe(
+                dest(path.resolve(__dirname, '../smart-contracts/contracts')),
+              )
+              .on('finish', async () => {
+                console.log('Restarting ganache...');
 
-          console.log('Restarting ganache...');
+                ganache = await runGanache();
 
-          ganache = await runGanache();
-          await restartSession();
-          await addContracts();
-          await pushContracts();
+                await restartSession();
+                await addContracts();
+                await pushContracts();
 
-          console.log('Ganache restarted, contracts re-deployed ...');
-          cb();
-        });
-      }, 1000);
+                console.log('Ganache restarted, contracts re-deployed ...');
+                cb();
+              });
+          });
+        }, 500);
+      }
     },
   );
 };
