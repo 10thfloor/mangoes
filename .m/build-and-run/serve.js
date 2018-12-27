@@ -52,9 +52,35 @@ const runDashboardApi = cb => {
   return run;
 };
 
+const runStorybook = cb => {
+  const run = spawn('yarn dev', {
+    shell: true,
+    cwd: path.resolve(__dirname, '../storybook'),
+  });
+  run.stdout.on('data', data => {
+    cb();
+  });
+  run.stderr.on('error', err => cb(err));
+  return run;
+};
+
+const runDocs = cb => {
+  const run = spawn('yarn docs:dev', {
+    shell: true,
+    cwd: path.resolve(__dirname, '../documentation'),
+  });
+  run.stdout.on('data', data => {
+    cb();
+  });
+  run.stderr.on('error', err => cb(err));
+  return run;
+};
+
 module.exports = {
   runClient,
   runApi,
   runDashboard,
   runDashboardApi,
+  runStorybook,
+  runDocs,
 };
