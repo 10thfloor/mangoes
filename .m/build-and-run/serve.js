@@ -53,6 +53,18 @@ const runDashboardApi = cb => {
   return run;
 };
 
+const runNative = cb => {
+  const run = spawn('yarn dev', {
+    shell: true,
+    cwd: path.resolve(__dirname, '../../native'),
+  });
+  run.stdout.on('data', data => {
+    cb();
+  });
+  run.stderr.on('error', err => cb(err));
+  return run;
+};
+
 const runStorybook = cb => {
   const run = spawn('yarn dev', {
     shell: true,
@@ -82,6 +94,7 @@ module.exports = {
   runApi,
   runDashboard,
   runDashboardApi,
+  runNative,
   runStorybook,
   runDocs,
 };

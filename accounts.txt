@@ -38,3 +38,9 @@ Gas Price
 Gas Limit
 ==================
 6721975
+
+Listening on 127.0.0.1:7545
+eth_accounts
+net_version
+net_version
+eth_call
