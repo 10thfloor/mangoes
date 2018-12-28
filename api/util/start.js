@@ -3,9 +3,9 @@ module.exports = (env, server) => {
     endpoint: '/api',
     cors: {
       credentials: true,
-      origin: 'http://localhost:3000',
-    },
-  };
+      origin: 'http://localhost:3000'
+    }
+  }
 
-  server.start(options);
-};
+  server.start(options)
+}

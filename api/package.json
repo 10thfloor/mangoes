@@ -4,10 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "dev": "node index.js",
+    "deploy-dev": "prisma deploy"
   },
   "dependencies": {
-    "graphql-yoga": "^1.16.7"
+    "graphql-cli": "^3.0.3",
+    "graphql-yoga": "^1.16.7",
+    "prisma": "^1.23.2",
+    "prisma-binding": "^2.2.12"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"

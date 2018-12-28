@@ -45,7 +45,7 @@ module.exports = {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:4000/api'
+        httpEndpoint: 'http://localhost:4000/mangoes/api'
       }
     }
   },
