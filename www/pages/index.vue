@@ -12,6 +12,7 @@ h1 {
 </style>
 
 <script>
+import 'tachyons'
 import gql from 'graphql-tag'
 
 export default {
