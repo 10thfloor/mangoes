@@ -33,7 +33,7 @@ export default (ctx, inject) => {
       let defaultClientConfig;
 
         defaultClientConfig = {
-  "httpEndpoint": "http://localhost:4000/api"
+  "httpEndpoint": "http://localhost:4000/mangoes/api"
 }
 
       const defaultCache = defaultClientConfig.cache
