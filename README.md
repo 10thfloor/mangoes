@@ -1,4 +1,4 @@
-## 🥭 Mangoes!
+# 🥭
 
 Start mangoes: `yarn start`
 
