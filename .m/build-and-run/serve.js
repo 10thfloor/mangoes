@@ -69,7 +69,7 @@ const runNative = cb => {
 const runStorybook = cb => {
   const run = spawn('yarn dev', {
     shell: true,
-    cwd: path.resolve(__dirname, '../storybook')
+    cwd: path.resolve(__dirname, '../../storybook')
   })
   run.stdout.on('data', data => {
     cb()
@@ -81,7 +81,7 @@ const runStorybook = cb => {
 const runDocs = cb => {
   const run = spawn('yarn docs:dev', {
     shell: true,
-    cwd: path.resolve(__dirname, '../documentation')
+    cwd: path.resolve(__dirname, '../../documentation')
   })
   run.stdout.on('data', data => {
     cb()

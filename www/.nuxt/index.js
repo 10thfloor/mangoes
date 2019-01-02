@@ -13,6 +13,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_apollomodule_4e2f36f1 from 'nuxt_plugin_apollomodule_4e2f36f1' // Source: ./apollo-module.js
+import nuxt_plugin_elementui_d905880e from 'nuxt_plugin_elementui_d905880e' // Source: ../plugins/element-ui
 
 // Component: <no-ssr>
 Vue.component(NoSSR.name, NoSSR)
@@ -148,6 +149,7 @@ async function createApp(ssrContext) {
   // Plugin execution
 
   if (typeof nuxt_plugin_apollomodule_4e2f36f1 === 'function') await nuxt_plugin_apollomodule_4e2f36f1(app.context, inject)
+  if (typeof nuxt_plugin_elementui_d905880e === 'function') await nuxt_plugin_elementui_d905880e(app.context, inject)
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {

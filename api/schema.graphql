@@ -1,3 +1,5 @@
+# Hello graphql
+
 type Query {
   ping(who: String!): String
 }

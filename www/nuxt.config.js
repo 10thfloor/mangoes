@@ -1,8 +1,9 @@
 const pkg = require('./package')
+const { resolve } = require('path')
 
 module.exports = {
   mode: 'spa',
-
+  modulesDir: resolve(__dirname, '../node_modules/'),
   build: {
     analyze: true
   },
@@ -27,12 +28,12 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: ['element-ui/lib/theme-chalk/index.css'],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: ['@/plugins/element-ui'],
 
   /*
   ** Nuxt.js modules
@@ -45,7 +46,7 @@ module.exports = {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:4000/mangoes/api'
+        httpEndpoint: 'http://localhost:4000/api'
       }
     }
   },
