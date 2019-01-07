@@ -1,6 +1,10 @@
 # 🥭
 
-Start mangoes: `yarn start`
+### The fastest way to build apps with Ethereum Smart Contracts
+
+Mangoes uses Vue (Nuxt) for the front-end and has everything you need to build a distributed application on the Ethereum blockchain using the zeppelin-os smart contract framework.
+
+**Start mangoes:** `yarn start`
 
 ### Resources:
 
