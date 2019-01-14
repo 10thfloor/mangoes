@@ -30,8 +30,8 @@ const defaultTask = gulp.series(serve, cb => {
 
   console.log(chalk.yellow('Ganache cli: http://localhost:7545\n'))
 
-  console.log(chalk.magenta('GraphQL API (prisma): locahost:4000/api'))
-  console.log(chalk.magenta('GraphQL explorer: locahost:4000\n'))
+  console.log(chalk.magenta('GraphQL API (prisma): http://locahost:4000/api'))
+  console.log(chalk.magenta('GraphQL explorer: http://locahost:4000\n'))
 
   console.log(chalk.green('Client (nuxt) app: http://localhost:3000'))
   console.log(

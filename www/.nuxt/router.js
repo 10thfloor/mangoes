@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _9b18b994 = () => interopDefault(import('../pages/join/index.vue' /* webpackChunkName: "pages/join/index" */))
-const _44c23459 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _25bb288d = () => interopDefault(import('../pages/home/index.vue' /* webpackChunkName: "pages/home/index" */))
+const _47c00337 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -63,12 +63,12 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/join",
-      component: _9b18b994,
-      name: "join"
+      path: "/home",
+      component: _25bb288d,
+      name: "home"
     }, {
       path: "/",
-      component: _44c23459,
+      component: _47c00337,
       name: "index"
     }],
 

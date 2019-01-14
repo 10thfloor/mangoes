@@ -7,22 +7,45 @@
         <nuxt-link to="/faq">FAQ</nuxt-link>
       </div>
       <div class="right-links">
-        <el-button
-          type="primary"
-          round
-        >Continue Course</el-button>
+        <el-button type="primary" round>Continue Course</el-button>
       </div>
     </el-header>
     <el-main>
       <div class="title">
-        <h1><img src="/bclogo.svg" />Blockchain School</h1>
+        <h1>
+          <img src="/bclogo.svg">Blockchain School
+        </h1>
         <p>Have fun and earn credentials while learning about the most important technology of the 21st century</p>
-        <el-button type="primary">Enroll</el-button>
+        <el-button type="primary" @click="login()">Enroll</el-button>
       </div>
     </el-main>
     <el-footer></el-footer>
   </el-container>
 </template>
+
+<script>
+import * as blockstack from 'blockstack'
+
+export default {
+  methods: {
+    login() {
+      blockstack.redirectToSignIn()
+    }
+  },
+  fetch({ store, redirect }) {
+    if (!store.state.user) {
+      if (blockstack.isUserSignedIn()) {
+        this.$store.commit('SET_USER', blockstack.loadUserData())
+        redirect('/home')
+      } else if (blockstack.isSignInPending()) {
+        blockstack.handlePendingSignIn().then(userData => {
+          redirect('/home')
+        })
+      }
+    }
+  }
+}
+</script>
 
 <style scoped="true">
 .el-container {

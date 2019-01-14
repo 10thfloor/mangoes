@@ -5,12 +5,16 @@ const path = require('path')
 const runClient = cb => {
   const run = spawn('yarn dev', {
     shell: true,
+    stdio: 'inherit',
     cwd: path.resolve(__dirname, '../../www')
   })
   run.stdout.on('data', data => {
     cb()
   })
   run.stderr.on('error', err => cb(err))
+  run.on('error', err => {
+    console.log('Error!')
+  })
   return run
 }
 
@@ -45,12 +49,14 @@ const runDashboard = cb => {
 const runDashboardApi = cb => {
   const run = spawn('yarn dev', {
     shell: true,
-    cwd: path.resolve(__dirname, '../dev-dashboard')
+    cwd: path.resolve(__dirname, '../dev-dashboard-server')
   })
   run.stdout.on('data', data => {
     cb()
   })
-  run.stderr.on('error', err => cb(err))
+  run.on('error', err => {
+    console.log('Error!')
+  })
   return run
 }
 

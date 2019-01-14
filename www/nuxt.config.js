@@ -1,9 +1,11 @@
 const pkg = require('./package')
 const { resolve } = require('path')
+const cors = require('cors')
 
 module.exports = {
   mode: 'spa',
   modulesDir: resolve(__dirname, '../node_modules/'),
+
   build: {
     analyze: true
   },
@@ -38,7 +40,13 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/apollo'],
+  modules: ['@nuxtjs/apollo', '@nuxtjs/proxy'],
+
+  proxy: {
+    '/manifest.json': {
+      target: 'http://localhost:4000/manifest'
+    }
+  },
 
   /*
   ** Apollo config

@@ -164,10 +164,10 @@ const watchContracts = async cb => {
   starting = true
   ganache = await runGanache()
 
-  await copyContracts()
-  await restartSession()
-  await addContracts()
-  await pushContracts()
+  // await copyContracts()
+  // await restartSession()
+  // await addContracts()
+  // await pushContracts()
 
   console.log('Done...')
   watch([path.resolve(__dirname, '../../contracts/*.sol')], function(cb) {
